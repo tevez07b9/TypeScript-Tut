@@ -1,0 +1,81 @@
+1. What is typescript?
+
+=> It is just an extension to JavaScript. Static typed
+extension for JS.
+
+// JavaScript is a Dynamically typed lanugage. This means
+the code will break only on runtime. Good for begineer
+and medium sized application. But at some point you need
+more safety that is can't give us.
+
+2. How TypeScript is better than JavaScript?
+
+=> We get errors in transpile phase rather than in
+runtime phase.
+
+=> It is difficult to scale JavaScript application,
+coz we only have Objects, Arrays, Numbers and so on.
+We cannot create Data Types in JavaScript.
+
+=> With TypeScript we can define our own data structures,
+which is much more safer to use.
+
+// TypeScript cannot directly run in browsers. TypeScript
+need to be transpiled to JavaScript. We get output as JavaScript
+and we run that(JavaScript) inside browsers.
+
+// It is much like Babel, transpile features that JavaScript does
+not have.
+
+<--- Topics --->
+
+  1. Interfaces
+  These help use to define Objects with certain types
+  of properties.
+
+  2. Unions
+  These help use to combine data types.
+
+<--- Topics --->
+
+<--- Commands --->
+
+  `tsc <filename>`
+  Compiles a .ts file to .js file(ECMA Script 3)
+
+  `tsc <filename> -w`
+  Same as above but with watch mode on
+
+  If you have a tsconfig.json file, then you can just
+  `tsc -w`
+
+<--- Commands --->
+
+<--- Syntax --->
+
+  1. Defining type of variables
+  ` <variableName>: <type> `
+
+  2. Defining type of params in functions
+  ` someFunction(var1: <type>, var2: <type>): <type> {} `
+
+  // Remember if you do not specify type in params,
+  it will by default make in ` type: any `.
+
+  3. Defining Interfaces
+  `  
+    interface User {
+      name: string;
+      age: number;
+    }
+  `
+  // putting a `?` like this makes the property
+  not mandatory.
+  Eg. ` age?: number `
+
+  4. Unions
+  ` let pageName: string | number `
+
+<--- Syntax --->
+
+Stopped at Type Aliases.
